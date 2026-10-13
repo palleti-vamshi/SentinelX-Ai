@@ -1,0 +1,11 @@
+host,owner,criticality,asset_type
+WS-014,jdoe,2,workstation
+WS-021,asmith,2,workstation
+WS-033,rkumar,1,workstation
+WS-040,mpatel,3,workstation
+SRV-FIN-01,finance-team,5,server
+SRV-HR-01,hr-team,4,server
+SRV-WEB-01,it-ops,3,server
+DC-01,it-ops,5,domain_controller
+CLOUD-VM-01,devops,3,cloud_vm
+CLOUD-VM-02,devops,2,cloud_vm
