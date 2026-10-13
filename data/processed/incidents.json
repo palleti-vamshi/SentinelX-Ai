@@ -1,0 +1,685 @@
+[
+  {
+    "incident_id": "INC-001",
+    "alert_ids": [
+      "A-0001",
+      "A-0002",
+      "A-0004",
+      "A-0005",
+      "A-0008"
+    ],
+    "hosts": [
+      "CLOUD-VM-01",
+      "SRV-FIN-01"
+    ],
+    "users": [
+      "sara.fin"
+    ],
+    "start": "2026-10-20T09:00:00Z",
+    "end": "2026-10-20T09:47:00Z",
+    "link_reasons": [
+      "same external IP 203.0.113.9",
+      "same host CLOUD-VM-01",
+      "same user sara.fin"
+    ],
+    "ti_reasons": [
+      "known command-and-control server"
+    ],
+    "risk_factors": {
+      "asset": 1.0,
+      "severity": 1.0,
+      "threat_intel": 1.0,
+      "alert_count": 0.5
+    },
+    "priority_score": 92,
+    "priority_label": "critical",
+    "scenario_tag": "account_compromise"
+  },
+  {
+    "incident_id": "INC-013",
+    "alert_ids": [
+      "A-0017",
+      "A-0019",
+      "A-0020"
+    ],
+    "hosts": [
+      "SRV-WEB-01"
+    ],
+    "users": [
+      "ravi.admin"
+    ],
+    "start": "2026-10-20T12:20:00Z",
+    "end": "2026-10-20T12:40:00Z",
+    "link_reasons": [
+      "same external IP 198.51.100.77",
+      "same host SRV-WEB-01"
+    ],
+    "ti_reasons": [
+      "known malware download host"
+    ],
+    "risk_factors": {
+      "asset": 0.5,
+      "severity": 1.0,
+      "threat_intel": 0.67,
+      "alert_count": 0.3
+    },
+    "priority_score": 66,
+    "priority_label": "high",
+    "scenario_tag": "network_attack"
+  },
+  {
+    "incident_id": "INC-012",
+    "alert_ids": [
+      "A-0016",
+      "A-0018"
+    ],
+    "hosts": [
+      "SRV-HR-01",
+      "WS-021"
+    ],
+    "users": [
+      "jdoe"
+    ],
+    "start": "2026-10-20T12:05:00Z",
+    "end": "2026-10-20T12:22:00Z",
+    "link_reasons": [
+      "same user jdoe"
+    ],
+    "ti_reasons": [],
+    "risk_factors": {
+      "asset": 0.75,
+      "severity": 0.33,
+      "threat_intel": 0.0,
+      "alert_count": 0.2
+    },
+    "priority_score": 36,
+    "priority_label": "medium",
+    "scenario_tag": "noise"
+  },
+  {
+    "incident_id": "INC-017",
+    "alert_ids": [
+      "A-0025",
+      "A-0026",
+      "A-0027"
+    ],
+    "hosts": [
+      "CLOUD-VM-02",
+      "WS-040"
+    ],
+    "users": [
+      "jdoe",
+      "mpatel"
+    ],
+    "start": "2026-10-20T14:25:00Z",
+    "end": "2026-10-20T14:46:00Z",
+    "link_reasons": [
+      "same host WS-040",
+      "same user jdoe"
+    ],
+    "ti_reasons": [],
+    "risk_factors": {
+      "asset": 0.5,
+      "severity": 0.33,
+      "threat_intel": 0.0,
+      "alert_count": 0.3
+    },
+    "priority_score": 30,
+    "priority_label": "medium",
+    "scenario_tag": "noise"
+  },
+  {
+    "incident_id": "INC-005",
+    "alert_ids": [
+      "A-0009"
+    ],
+    "hosts": [
+      "SRV-HR-01"
+    ],
+    "users": [
+      "jdoe"
+    ],
+    "start": "2026-10-20T09:47:00Z",
+    "end": "2026-10-20T09:47:00Z",
+    "link_reasons": [],
+    "ti_reasons": [],
+    "risk_factors": {
+      "asset": 0.75,
+      "severity": 0.0,
+      "threat_intel": 0.0,
+      "alert_count": 0.1
+    },
+    "priority_score": 24,
+    "priority_label": "low",
+    "scenario_tag": "noise"
+  },
+  {
+    "incident_id": "INC-016",
+    "alert_ids": [
+      "A-0023",
+      "A-0024"
+    ],
+    "hosts": [
+      "WS-014"
+    ],
+    "users": [
+      "asmith",
+      "mpatel"
+    ],
+    "start": "2026-10-20T13:43:00Z",
+    "end": "2026-10-20T14:05:00Z",
+    "link_reasons": [
+      "same host WS-014"
+    ],
+    "ti_reasons": [],
+    "risk_factors": {
+      "asset": 0.25,
+      "severity": 0.33,
+      "threat_intel": 0.0,
+      "alert_count": 0.2
+    },
+    "priority_score": 20,
+    "priority_label": "low",
+    "scenario_tag": "noise"
+  },
+  {
+    "incident_id": "INC-003",
+    "alert_ids": [
+      "A-0006"
+    ],
+    "hosts": [
+      "CLOUD-VM-02"
+    ],
+    "users": [
+      "asmith"
+    ],
+    "start": "2026-10-20T09:40:00Z",
+    "end": "2026-10-20T09:40:00Z",
+    "link_reasons": [],
+    "ti_reasons": [],
+    "risk_factors": {
+      "asset": 0.25,
+      "severity": 0.33,
+      "threat_intel": 0.0,
+      "alert_count": 0.1
+    },
+    "priority_score": 19,
+    "priority_label": "low",
+    "scenario_tag": "noise"
+  },
+  {
+    "incident_id": "INC-020",
+    "alert_ids": [
+      "A-0030"
+    ],
+    "hosts": [
+      "WS-040"
+    ],
+    "users": [
+      "jdoe"
+    ],
+    "start": "2026-10-20T15:19:00Z",
+    "end": "2026-10-20T15:19:00Z",
+    "link_reasons": [],
+    "ti_reasons": [],
+    "risk_factors": {
+      "asset": 0.5,
+      "severity": 0.0,
+      "threat_intel": 0.0,
+      "alert_count": 0.1
+    },
+    "priority_score": 16,
+    "priority_label": "low",
+    "scenario_tag": "noise"
+  },
+  {
+    "incident_id": "INC-023",
+    "alert_ids": [
+      "A-0033"
+    ],
+    "hosts": [
+      "WS-040"
+    ],
+    "users": [
+      "jdoe"
+    ],
+    "start": "2026-10-20T15:33:00Z",
+    "end": "2026-10-20T15:33:00Z",
+    "link_reasons": [],
+    "ti_reasons": [],
+    "risk_factors": {
+      "asset": 0.5,
+      "severity": 0.0,
+      "threat_intel": 0.0,
+      "alert_count": 0.1
+    },
+    "priority_score": 16,
+    "priority_label": "low",
+    "scenario_tag": "noise"
+  },
+  {
+    "incident_id": "INC-002",
+    "alert_ids": [
+      "A-0003"
+    ],
+    "hosts": [
+      "WS-014"
+    ],
+    "users": [
+      "jdoe"
+    ],
+    "start": "2026-10-20T09:15:00Z",
+    "end": "2026-10-20T09:15:00Z",
+    "link_reasons": [],
+    "ti_reasons": [],
+    "risk_factors": {
+      "asset": 0.25,
+      "severity": 0.0,
+      "threat_intel": 0.0,
+      "alert_count": 0.1
+    },
+    "priority_score": 9,
+    "priority_label": "low",
+    "scenario_tag": "noise"
+  },
+  {
+    "incident_id": "INC-004",
+    "alert_ids": [
+      "A-0007"
+    ],
+    "hosts": [
+      "WS-021"
+    ],
+    "users": [
+      "jdoe"
+    ],
+    "start": "2026-10-20T09:40:00Z",
+    "end": "2026-10-20T09:40:00Z",
+    "link_reasons": [],
+    "ti_reasons": [],
+    "risk_factors": {
+      "asset": 0.25,
+      "severity": 0.0,
+      "threat_intel": 0.0,
+      "alert_count": 0.1
+    },
+    "priority_score": 9,
+    "priority_label": "low",
+    "scenario_tag": "noise"
+  },
+  {
+    "incident_id": "INC-006",
+    "alert_ids": [
+      "A-0010"
+    ],
+    "hosts": [
+      "CLOUD-VM-02"
+    ],
+    "users": [
+      "mpatel"
+    ],
+    "start": "2026-10-20T10:48:00Z",
+    "end": "2026-10-20T10:48:00Z",
+    "link_reasons": [],
+    "ti_reasons": [],
+    "risk_factors": {
+      "asset": 0.25,
+      "severity": 0.0,
+      "threat_intel": 0.0,
+      "alert_count": 0.1
+    },
+    "priority_score": 9,
+    "priority_label": "low",
+    "scenario_tag": "noise"
+  },
+  {
+    "incident_id": "INC-007",
+    "alert_ids": [
+      "A-0011"
+    ],
+    "hosts": [
+      "WS-014"
+    ],
+    "users": [
+      "asmith"
+    ],
+    "start": "2026-10-20T10:57:00Z",
+    "end": "2026-10-20T10:57:00Z",
+    "link_reasons": [],
+    "ti_reasons": [],
+    "risk_factors": {
+      "asset": 0.25,
+      "severity": 0.0,
+      "threat_intel": 0.0,
+      "alert_count": 0.1
+    },
+    "priority_score": 9,
+    "priority_label": "low",
+    "scenario_tag": "noise"
+  },
+  {
+    "incident_id": "INC-011",
+    "alert_ids": [
+      "A-0015"
+    ],
+    "hosts": [
+      "WS-021"
+    ],
+    "users": [
+      "jdoe"
+    ],
+    "start": "2026-10-20T11:22:00Z",
+    "end": "2026-10-20T11:22:00Z",
+    "link_reasons": [],
+    "ti_reasons": [],
+    "risk_factors": {
+      "asset": 0.25,
+      "severity": 0.0,
+      "threat_intel": 0.0,
+      "alert_count": 0.1
+    },
+    "priority_score": 9,
+    "priority_label": "low",
+    "scenario_tag": "noise"
+  },
+  {
+    "incident_id": "INC-014",
+    "alert_ids": [
+      "A-0021"
+    ],
+    "hosts": [
+      "WS-014"
+    ],
+    "users": [
+      "mpatel"
+    ],
+    "start": "2026-10-20T12:52:00Z",
+    "end": "2026-10-20T12:52:00Z",
+    "link_reasons": [],
+    "ti_reasons": [],
+    "risk_factors": {
+      "asset": 0.25,
+      "severity": 0.0,
+      "threat_intel": 0.0,
+      "alert_count": 0.1
+    },
+    "priority_score": 9,
+    "priority_label": "low",
+    "scenario_tag": "noise"
+  },
+  {
+    "incident_id": "INC-015",
+    "alert_ids": [
+      "A-0022"
+    ],
+    "hosts": [
+      "WS-021"
+    ],
+    "users": [
+      "jdoe"
+    ],
+    "start": "2026-10-20T13:33:00Z",
+    "end": "2026-10-20T13:33:00Z",
+    "link_reasons": [],
+    "ti_reasons": [],
+    "risk_factors": {
+      "asset": 0.25,
+      "severity": 0.0,
+      "threat_intel": 0.0,
+      "alert_count": 0.1
+    },
+    "priority_score": 9,
+    "priority_label": "low",
+    "scenario_tag": "noise"
+  },
+  {
+    "incident_id": "INC-018",
+    "alert_ids": [
+      "A-0028"
+    ],
+    "hosts": [
+      "WS-014"
+    ],
+    "users": [
+      "jdoe"
+    ],
+    "start": "2026-10-20T15:00:00Z",
+    "end": "2026-10-20T15:00:00Z",
+    "link_reasons": [],
+    "ti_reasons": [],
+    "risk_factors": {
+      "asset": 0.25,
+      "severity": 0.0,
+      "threat_intel": 0.0,
+      "alert_count": 0.1
+    },
+    "priority_score": 9,
+    "priority_label": "low",
+    "scenario_tag": "noise"
+  },
+  {
+    "incident_id": "INC-019",
+    "alert_ids": [
+      "A-0029"
+    ],
+    "hosts": [
+      "CLOUD-VM-02"
+    ],
+    "users": [
+      "asmith"
+    ],
+    "start": "2026-10-20T15:06:00Z",
+    "end": "2026-10-20T15:06:00Z",
+    "link_reasons": [],
+    "ti_reasons": [],
+    "risk_factors": {
+      "asset": 0.25,
+      "severity": 0.0,
+      "threat_intel": 0.0,
+      "alert_count": 0.1
+    },
+    "priority_score": 9,
+    "priority_label": "low",
+    "scenario_tag": "noise"
+  },
+  {
+    "incident_id": "INC-021",
+    "alert_ids": [
+      "A-0031"
+    ],
+    "hosts": [
+      "CLOUD-VM-02"
+    ],
+    "users": [
+      "mpatel"
+    ],
+    "start": "2026-10-20T15:21:00Z",
+    "end": "2026-10-20T15:21:00Z",
+    "link_reasons": [],
+    "ti_reasons": [],
+    "risk_factors": {
+      "asset": 0.25,
+      "severity": 0.0,
+      "threat_intel": 0.0,
+      "alert_count": 0.1
+    },
+    "priority_score": 9,
+    "priority_label": "low",
+    "scenario_tag": "noise"
+  },
+  {
+    "incident_id": "INC-022",
+    "alert_ids": [
+      "A-0032"
+    ],
+    "hosts": [
+      "WS-014"
+    ],
+    "users": [
+      "jdoe"
+    ],
+    "start": "2026-10-20T15:26:00Z",
+    "end": "2026-10-20T15:26:00Z",
+    "link_reasons": [],
+    "ti_reasons": [],
+    "risk_factors": {
+      "asset": 0.25,
+      "severity": 0.0,
+      "threat_intel": 0.0,
+      "alert_count": 0.1
+    },
+    "priority_score": 9,
+    "priority_label": "low",
+    "scenario_tag": "noise"
+  },
+  {
+    "incident_id": "INC-024",
+    "alert_ids": [
+      "A-0034"
+    ],
+    "hosts": [
+      "WS-014"
+    ],
+    "users": [
+      "mpatel"
+    ],
+    "start": "2026-10-20T15:53:00Z",
+    "end": "2026-10-20T15:53:00Z",
+    "link_reasons": [],
+    "ti_reasons": [],
+    "risk_factors": {
+      "asset": 0.25,
+      "severity": 0.0,
+      "threat_intel": 0.0,
+      "alert_count": 0.1
+    },
+    "priority_score": 9,
+    "priority_label": "low",
+    "scenario_tag": "noise"
+  },
+  {
+    "incident_id": "INC-025",
+    "alert_ids": [
+      "A-0035"
+    ],
+    "hosts": [
+      "WS-014"
+    ],
+    "users": [
+      "jdoe"
+    ],
+    "start": "2026-10-20T15:54:00Z",
+    "end": "2026-10-20T15:54:00Z",
+    "link_reasons": [],
+    "ti_reasons": [],
+    "risk_factors": {
+      "asset": 0.25,
+      "severity": 0.0,
+      "threat_intel": 0.0,
+      "alert_count": 0.1
+    },
+    "priority_score": 9,
+    "priority_label": "low",
+    "scenario_tag": "noise"
+  },
+  {
+    "incident_id": "INC-026",
+    "alert_ids": [
+      "A-0036"
+    ],
+    "hosts": [
+      "CLOUD-VM-02"
+    ],
+    "users": [
+      "jdoe"
+    ],
+    "start": "2026-10-20T16:53:00Z",
+    "end": "2026-10-20T16:53:00Z",
+    "link_reasons": [],
+    "ti_reasons": [],
+    "risk_factors": {
+      "asset": 0.25,
+      "severity": 0.0,
+      "threat_intel": 0.0,
+      "alert_count": 0.1
+    },
+    "priority_score": 9,
+    "priority_label": "low",
+    "scenario_tag": "noise"
+  },
+  {
+    "incident_id": "INC-008",
+    "alert_ids": [
+      "A-0012"
+    ],
+    "hosts": [
+      "WS-033"
+    ],
+    "users": [
+      "rkumar"
+    ],
+    "start": "2026-10-20T11:00:00Z",
+    "end": "2026-10-20T11:00:00Z",
+    "link_reasons": [],
+    "ti_reasons": [],
+    "risk_factors": {
+      "asset": 0.0,
+      "severity": 0.0,
+      "threat_intel": 0.0,
+      "alert_count": 0.1
+    },
+    "priority_score": 2,
+    "priority_label": "low",
+    "scenario_tag": "benign_routine"
+  },
+  {
+    "incident_id": "INC-009",
+    "alert_ids": [
+      "A-0013"
+    ],
+    "hosts": [
+      "WS-033"
+    ],
+    "users": [
+      "rkumar"
+    ],
+    "start": "2026-10-20T11:02:00Z",
+    "end": "2026-10-20T11:02:00Z",
+    "link_reasons": [],
+    "ti_reasons": [],
+    "risk_factors": {
+      "asset": 0.0,
+      "severity": 0.0,
+      "threat_intel": 0.0,
+      "alert_count": 0.1
+    },
+    "priority_score": 2,
+    "priority_label": "low",
+    "scenario_tag": "benign_routine"
+  },
+  {
+    "incident_id": "INC-010",
+    "alert_ids": [
+      "A-0014"
+    ],
+    "hosts": [
+      "WS-033"
+    ],
+    "users": [
+      "rkumar"
+    ],
+    "start": "2026-10-20T11:15:00Z",
+    "end": "2026-10-20T11:15:00Z",
+    "link_reasons": [],
+    "ti_reasons": [],
+    "risk_factors": {
+      "asset": 0.0,
+      "severity": 0.0,
+      "threat_intel": 0.0,
+      "alert_count": 0.1
+    },
+    "priority_score": 2,
+    "priority_label": "low",
+    "scenario_tag": "benign_routine"
+  }
+]
