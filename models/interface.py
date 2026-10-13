@@ -213,11 +213,27 @@ def explain(
     )
 
 
-def summarize_incident(incident: Mapping[str, Any]) -> dict[str, Any]:
-    """Stub for LLM incident investigation (scheduled for Phase 4: Ollama)."""
-    raise NotImplementedError(
-        "summarize_incident(incident) is scheduled for Phase 4: Ollama investigation summaries."
+def summarize_incident(
+    incident: Mapping[str, Any],
+    use_cache: bool = True,
+    force_template: bool = False,
+) -> dict[str, Any]:
+    """Generate structured investigation summary for a security incident.
+
+    Delegates to models.llm.summarize_incident().
+    """
+    from models.llm import summarize_incident as summarize_fn
+    return summarize_fn(
+        incident=incident,
+        use_cache=use_cache,
+        force_template=force_template,
     )
+
+
+def get_example_incident() -> dict[str, Any]:
+    """Return a representative incident object matching Yasaswi's Part 5.2 schema."""
+    from models.llm import get_example_incident as get_inc_fn
+    return get_inc_fn()
 
 
 def get_example_record(as_attack: bool = True) -> dict[str, Any]:

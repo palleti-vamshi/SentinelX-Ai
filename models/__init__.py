@@ -4,7 +4,6 @@ Responsible for network-flow attack detection, model training,
 feature explanations (Phase 3), and LLM investigation summaries (Phase 4).
 """
 
-from models.interface import explain, predict
+from models.interface import explain, predict, summarize_incident
 
-__all__ = ["predict", "explain"]
-
+__all__ = ["predict", "explain", "summarize_incident"]
