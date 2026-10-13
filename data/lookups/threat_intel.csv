@@ -1,0 +1,5 @@
+indicator,type,reason
+203.0.113.9,ip,known command-and-control server
+203.0.113.45,ip,source of credential stuffing attacks
+198.51.100.23,ip,tor exit node used in phishing campaigns
+198.51.100.77,ip,known malware download host

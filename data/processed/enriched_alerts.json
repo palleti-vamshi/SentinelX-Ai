@@ -1,0 +1,902 @@
+[
+  {
+    "alert_id": "A-0001",
+    "source": "identity",
+    "timestamp": "2026-10-20T09:00:00Z",
+    "severity": "high",
+    "host": null,
+    "user": "sara.fin",
+    "src_ip": "203.0.113.9",
+    "dst_ip": null,
+    "rule": "Login from unusual country",
+    "details": {
+      "scenario": "account_compromise"
+    },
+    "enrichment": {
+      "asset_criticality": 1,
+      "asset_owner": null,
+      "asset_type": null,
+      "user_role": "finance_manager",
+      "user_department": "finance",
+      "user_privileged": true,
+      "ti_match": true,
+      "ti_reason": "known command-and-control server",
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0002",
+    "source": "identity",
+    "timestamp": "2026-10-20T09:06:00Z",
+    "severity": "medium",
+    "host": null,
+    "user": "sara.fin",
+    "src_ip": "203.0.113.9",
+    "dst_ip": null,
+    "rule": "Multiple failed MFA prompts",
+    "details": {
+      "scenario": "account_compromise"
+    },
+    "enrichment": {
+      "asset_criticality": 1,
+      "asset_owner": null,
+      "asset_type": null,
+      "user_role": "finance_manager",
+      "user_department": "finance",
+      "user_privileged": true,
+      "ti_match": true,
+      "ti_reason": "known command-and-control server",
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0003",
+    "source": "edr",
+    "timestamp": "2026-10-20T09:15:00Z",
+    "severity": "low",
+    "host": "WS-014",
+    "user": "jdoe",
+    "src_ip": "10.0.0.129",
+    "dst_ip": null,
+    "rule": "Software update installed",
+    "details": {
+      "scenario": "noise"
+    },
+    "enrichment": {
+      "asset_criticality": 2,
+      "asset_owner": "jdoe",
+      "asset_type": "workstation",
+      "user_role": "analyst",
+      "user_department": "finance",
+      "user_privileged": false,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0004",
+    "source": "edr",
+    "timestamp": "2026-10-20T09:18:00Z",
+    "severity": "high",
+    "host": "SRV-FIN-01",
+    "user": "sara.fin",
+    "src_ip": null,
+    "dst_ip": null,
+    "rule": "Suspicious process accessed stored credentials",
+    "details": {
+      "scenario": "account_compromise"
+    },
+    "enrichment": {
+      "asset_criticality": 5,
+      "asset_owner": "finance-team",
+      "asset_type": "server",
+      "user_role": "finance_manager",
+      "user_department": "finance",
+      "user_privileged": true,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0005",
+    "source": "cloud",
+    "timestamp": "2026-10-20T09:31:00Z",
+    "severity": "high",
+    "host": "CLOUD-VM-01",
+    "user": "sara.fin",
+    "src_ip": "203.0.113.9",
+    "dst_ip": null,
+    "rule": "New access key created",
+    "details": {
+      "scenario": "account_compromise"
+    },
+    "enrichment": {
+      "asset_criticality": 3,
+      "asset_owner": "devops",
+      "asset_type": "cloud_vm",
+      "user_role": "finance_manager",
+      "user_department": "finance",
+      "user_privileged": true,
+      "ti_match": true,
+      "ti_reason": "known command-and-control server",
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0006",
+    "source": "siem",
+    "timestamp": "2026-10-20T09:40:00Z",
+    "severity": "medium",
+    "host": "CLOUD-VM-02",
+    "user": "asmith",
+    "src_ip": "10.0.0.180",
+    "dst_ip": null,
+    "rule": "Port scan from internal scanner",
+    "details": {
+      "scenario": "noise"
+    },
+    "enrichment": {
+      "asset_criticality": 2,
+      "asset_owner": "devops",
+      "asset_type": "cloud_vm",
+      "user_role": "hr_executive",
+      "user_department": "hr",
+      "user_privileged": false,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0007",
+    "source": "identity",
+    "timestamp": "2026-10-20T09:40:00Z",
+    "severity": "low",
+    "host": "WS-021",
+    "user": "jdoe",
+    "src_ip": "10.0.0.148",
+    "dst_ip": null,
+    "rule": "Single failed login",
+    "details": {
+      "scenario": "noise"
+    },
+    "enrichment": {
+      "asset_criticality": 2,
+      "asset_owner": "asmith",
+      "asset_type": "workstation",
+      "user_role": "analyst",
+      "user_department": "finance",
+      "user_privileged": false,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0008",
+    "source": "cloud",
+    "timestamp": "2026-10-20T09:47:00Z",
+    "severity": "critical",
+    "host": "CLOUD-VM-01",
+    "user": "sara.fin",
+    "src_ip": "203.0.113.9",
+    "dst_ip": null,
+    "rule": "Unusual large data download",
+    "details": {
+      "scenario": "account_compromise"
+    },
+    "enrichment": {
+      "asset_criticality": 3,
+      "asset_owner": "devops",
+      "asset_type": "cloud_vm",
+      "user_role": "finance_manager",
+      "user_department": "finance",
+      "user_privileged": true,
+      "ti_match": true,
+      "ti_reason": "known command-and-control server",
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0009",
+    "source": "edr",
+    "timestamp": "2026-10-20T09:47:00Z",
+    "severity": "low",
+    "host": "SRV-HR-01",
+    "user": "jdoe",
+    "src_ip": "10.0.0.145",
+    "dst_ip": null,
+    "rule": "USB device connected",
+    "details": {
+      "scenario": "noise"
+    },
+    "enrichment": {
+      "asset_criticality": 4,
+      "asset_owner": "hr-team",
+      "asset_type": "server",
+      "user_role": "analyst",
+      "user_department": "finance",
+      "user_privileged": false,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0010",
+    "source": "identity",
+    "timestamp": "2026-10-20T10:48:00Z",
+    "severity": "low",
+    "host": "CLOUD-VM-02",
+    "user": "mpatel",
+    "src_ip": "10.0.0.140",
+    "dst_ip": null,
+    "rule": "Login from new browser",
+    "details": {
+      "scenario": "noise"
+    },
+    "enrichment": {
+      "asset_criticality": 2,
+      "asset_owner": "devops",
+      "asset_type": "cloud_vm",
+      "user_role": "sales_manager",
+      "user_department": "sales",
+      "user_privileged": false,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0011",
+    "source": "edr",
+    "timestamp": "2026-10-20T10:57:00Z",
+    "severity": "low",
+    "host": "WS-014",
+    "user": "asmith",
+    "src_ip": "10.0.0.151",
+    "dst_ip": null,
+    "rule": "USB device connected",
+    "details": {
+      "scenario": "noise"
+    },
+    "enrichment": {
+      "asset_criticality": 2,
+      "asset_owner": "jdoe",
+      "asset_type": "workstation",
+      "user_role": "hr_executive",
+      "user_department": "hr",
+      "user_privileged": false,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0012",
+    "source": "identity",
+    "timestamp": "2026-10-20T11:00:00Z",
+    "severity": "low",
+    "host": "WS-033",
+    "user": "rkumar",
+    "src_ip": "10.0.0.33",
+    "dst_ip": null,
+    "rule": "Multiple failed logins",
+    "details": {
+      "scenario": "benign_routine"
+    },
+    "enrichment": {
+      "asset_criticality": 1,
+      "asset_owner": "rkumar",
+      "asset_type": "workstation",
+      "user_role": "developer",
+      "user_department": "engineering",
+      "user_privileged": false,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0013",
+    "source": "identity",
+    "timestamp": "2026-10-20T11:02:00Z",
+    "severity": "low",
+    "host": "WS-033",
+    "user": "rkumar",
+    "src_ip": "10.0.0.33",
+    "dst_ip": null,
+    "rule": "Successful login after failures",
+    "details": {
+      "scenario": "benign_routine"
+    },
+    "enrichment": {
+      "asset_criticality": 1,
+      "asset_owner": "rkumar",
+      "asset_type": "workstation",
+      "user_role": "developer",
+      "user_department": "engineering",
+      "user_privileged": false,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0014",
+    "source": "edr",
+    "timestamp": "2026-10-20T11:15:00Z",
+    "severity": "low",
+    "host": "WS-033",
+    "user": "rkumar",
+    "src_ip": null,
+    "dst_ip": null,
+    "rule": "Software update installed",
+    "details": {
+      "scenario": "benign_routine"
+    },
+    "enrichment": {
+      "asset_criticality": 1,
+      "asset_owner": "rkumar",
+      "asset_type": "workstation",
+      "user_role": "developer",
+      "user_department": "engineering",
+      "user_privileged": false,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0015",
+    "source": "edr",
+    "timestamp": "2026-10-20T11:22:00Z",
+    "severity": "low",
+    "host": "WS-021",
+    "user": "jdoe",
+    "src_ip": "10.0.0.197",
+    "dst_ip": null,
+    "rule": "Software update installed",
+    "details": {
+      "scenario": "noise"
+    },
+    "enrichment": {
+      "asset_criticality": 2,
+      "asset_owner": "asmith",
+      "asset_type": "workstation",
+      "user_role": "analyst",
+      "user_department": "finance",
+      "user_privileged": false,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0016",
+    "source": "edr",
+    "timestamp": "2026-10-20T12:05:00Z",
+    "severity": "medium",
+    "host": "WS-021",
+    "user": "jdoe",
+    "src_ip": "10.0.0.165",
+    "dst_ip": null,
+    "rule": "Software update installed",
+    "details": {
+      "scenario": "noise"
+    },
+    "enrichment": {
+      "asset_criticality": 2,
+      "asset_owner": "asmith",
+      "asset_type": "workstation",
+      "user_role": "analyst",
+      "user_department": "finance",
+      "user_privileged": false,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0017",
+    "source": "siem",
+    "timestamp": "2026-10-20T12:20:00Z",
+    "severity": "medium",
+    "host": "SRV-WEB-01",
+    "user": null,
+    "src_ip": "198.51.100.77",
+    "dst_ip": "10.0.1.20",
+    "rule": "Port scan from external IP",
+    "details": {
+      "scenario": "network_attack"
+    },
+    "enrichment": {
+      "asset_criticality": 3,
+      "asset_owner": "it-ops",
+      "asset_type": "server",
+      "user_role": null,
+      "user_department": null,
+      "user_privileged": false,
+      "ti_match": true,
+      "ti_reason": "known malware download host",
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0018",
+    "source": "identity",
+    "timestamp": "2026-10-20T12:22:00Z",
+    "severity": "medium",
+    "host": "SRV-HR-01",
+    "user": "jdoe",
+    "src_ip": "10.0.0.133",
+    "dst_ip": null,
+    "rule": "Single failed login",
+    "details": {
+      "scenario": "noise"
+    },
+    "enrichment": {
+      "asset_criticality": 4,
+      "asset_owner": "hr-team",
+      "asset_type": "server",
+      "user_role": "analyst",
+      "user_department": "finance",
+      "user_privileged": false,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0019",
+    "source": "siem",
+    "timestamp": "2026-10-20T12:28:00Z",
+    "severity": "high",
+    "host": "SRV-WEB-01",
+    "user": null,
+    "src_ip": "198.51.100.77",
+    "dst_ip": "10.0.1.20",
+    "rule": "Web exploit attempt detected",
+    "details": {
+      "scenario": "network_attack"
+    },
+    "enrichment": {
+      "asset_criticality": 3,
+      "asset_owner": "it-ops",
+      "asset_type": "server",
+      "user_role": null,
+      "user_department": null,
+      "user_privileged": false,
+      "ti_match": true,
+      "ti_reason": "known malware download host",
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0020",
+    "source": "edr",
+    "timestamp": "2026-10-20T12:40:00Z",
+    "severity": "critical",
+    "host": "SRV-WEB-01",
+    "user": "ravi.admin",
+    "src_ip": null,
+    "dst_ip": null,
+    "rule": "Unknown binary executed after exploit",
+    "details": {
+      "scenario": "network_attack"
+    },
+    "enrichment": {
+      "asset_criticality": 3,
+      "asset_owner": "it-ops",
+      "asset_type": "server",
+      "user_role": "system_admin",
+      "user_department": "it",
+      "user_privileged": true,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0021",
+    "source": "edr",
+    "timestamp": "2026-10-20T12:52:00Z",
+    "severity": "low",
+    "host": "WS-014",
+    "user": "mpatel",
+    "src_ip": "10.0.0.192",
+    "dst_ip": null,
+    "rule": "Software update installed",
+    "details": {
+      "scenario": "noise"
+    },
+    "enrichment": {
+      "asset_criticality": 2,
+      "asset_owner": "jdoe",
+      "asset_type": "workstation",
+      "user_role": "sales_manager",
+      "user_department": "sales",
+      "user_privileged": false,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0022",
+    "source": "siem",
+    "timestamp": "2026-10-20T13:33:00Z",
+    "severity": "low",
+    "host": "WS-021",
+    "user": "jdoe",
+    "src_ip": "10.0.0.159",
+    "dst_ip": null,
+    "rule": "Port scan from internal scanner",
+    "details": {
+      "scenario": "noise"
+    },
+    "enrichment": {
+      "asset_criticality": 2,
+      "asset_owner": "asmith",
+      "asset_type": "workstation",
+      "user_role": "analyst",
+      "user_department": "finance",
+      "user_privileged": false,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0023",
+    "source": "cloud",
+    "timestamp": "2026-10-20T13:43:00Z",
+    "severity": "low",
+    "host": "WS-014",
+    "user": "mpatel",
+    "src_ip": "10.0.0.192",
+    "dst_ip": null,
+    "rule": "Storage bucket listed",
+    "details": {
+      "scenario": "noise"
+    },
+    "enrichment": {
+      "asset_criticality": 2,
+      "asset_owner": "jdoe",
+      "asset_type": "workstation",
+      "user_role": "sales_manager",
+      "user_department": "sales",
+      "user_privileged": false,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0024",
+    "source": "identity",
+    "timestamp": "2026-10-20T14:05:00Z",
+    "severity": "medium",
+    "host": "WS-014",
+    "user": "asmith",
+    "src_ip": "10.0.0.148",
+    "dst_ip": null,
+    "rule": "Password changed",
+    "details": {
+      "scenario": "noise"
+    },
+    "enrichment": {
+      "asset_criticality": 2,
+      "asset_owner": "jdoe",
+      "asset_type": "workstation",
+      "user_role": "hr_executive",
+      "user_department": "hr",
+      "user_privileged": false,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0025",
+    "source": "identity",
+    "timestamp": "2026-10-20T14:25:00Z",
+    "severity": "medium",
+    "host": "WS-040",
+    "user": "jdoe",
+    "src_ip": "10.0.0.147",
+    "dst_ip": null,
+    "rule": "Login from new browser",
+    "details": {
+      "scenario": "noise"
+    },
+    "enrichment": {
+      "asset_criticality": 3,
+      "asset_owner": "mpatel",
+      "asset_type": "workstation",
+      "user_role": "analyst",
+      "user_department": "finance",
+      "user_privileged": false,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0026",
+    "source": "edr",
+    "timestamp": "2026-10-20T14:43:00Z",
+    "severity": "low",
+    "host": "WS-040",
+    "user": "mpatel",
+    "src_ip": "10.0.0.187",
+    "dst_ip": null,
+    "rule": "USB device connected",
+    "details": {
+      "scenario": "noise"
+    },
+    "enrichment": {
+      "asset_criticality": 3,
+      "asset_owner": "mpatel",
+      "asset_type": "workstation",
+      "user_role": "sales_manager",
+      "user_department": "sales",
+      "user_privileged": false,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0027",
+    "source": "identity",
+    "timestamp": "2026-10-20T14:46:00Z",
+    "severity": "low",
+    "host": "CLOUD-VM-02",
+    "user": "jdoe",
+    "src_ip": "10.0.0.175",
+    "dst_ip": null,
+    "rule": "Password changed",
+    "details": {
+      "scenario": "noise"
+    },
+    "enrichment": {
+      "asset_criticality": 2,
+      "asset_owner": "devops",
+      "asset_type": "cloud_vm",
+      "user_role": "analyst",
+      "user_department": "finance",
+      "user_privileged": false,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0028",
+    "source": "edr",
+    "timestamp": "2026-10-20T15:00:00Z",
+    "severity": "low",
+    "host": "WS-014",
+    "user": "jdoe",
+    "src_ip": "10.0.0.184",
+    "dst_ip": null,
+    "rule": "USB device connected",
+    "details": {
+      "scenario": "noise"
+    },
+    "enrichment": {
+      "asset_criticality": 2,
+      "asset_owner": "jdoe",
+      "asset_type": "workstation",
+      "user_role": "analyst",
+      "user_department": "finance",
+      "user_privileged": false,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0029",
+    "source": "siem",
+    "timestamp": "2026-10-20T15:06:00Z",
+    "severity": "low",
+    "host": "CLOUD-VM-02",
+    "user": "asmith",
+    "src_ip": "10.0.0.128",
+    "dst_ip": null,
+    "rule": "Firewall rule hit (low risk)",
+    "details": {
+      "scenario": "noise"
+    },
+    "enrichment": {
+      "asset_criticality": 2,
+      "asset_owner": "devops",
+      "asset_type": "cloud_vm",
+      "user_role": "hr_executive",
+      "user_department": "hr",
+      "user_privileged": false,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0030",
+    "source": "siem",
+    "timestamp": "2026-10-20T15:19:00Z",
+    "severity": "low",
+    "host": "WS-040",
+    "user": "jdoe",
+    "src_ip": "10.0.0.128",
+    "dst_ip": null,
+    "rule": "Port scan from internal scanner",
+    "details": {
+      "scenario": "noise"
+    },
+    "enrichment": {
+      "asset_criticality": 3,
+      "asset_owner": "mpatel",
+      "asset_type": "workstation",
+      "user_role": "analyst",
+      "user_department": "finance",
+      "user_privileged": false,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0031",
+    "source": "identity",
+    "timestamp": "2026-10-20T15:21:00Z",
+    "severity": "low",
+    "host": "CLOUD-VM-02",
+    "user": "mpatel",
+    "src_ip": "10.0.0.133",
+    "dst_ip": null,
+    "rule": "Password changed",
+    "details": {
+      "scenario": "noise"
+    },
+    "enrichment": {
+      "asset_criticality": 2,
+      "asset_owner": "devops",
+      "asset_type": "cloud_vm",
+      "user_role": "sales_manager",
+      "user_department": "sales",
+      "user_privileged": false,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0032",
+    "source": "cloud",
+    "timestamp": "2026-10-20T15:26:00Z",
+    "severity": "low",
+    "host": "WS-014",
+    "user": "jdoe",
+    "src_ip": "10.0.0.119",
+    "dst_ip": null,
+    "rule": "Storage bucket listed",
+    "details": {
+      "scenario": "noise"
+    },
+    "enrichment": {
+      "asset_criticality": 2,
+      "asset_owner": "jdoe",
+      "asset_type": "workstation",
+      "user_role": "analyst",
+      "user_department": "finance",
+      "user_privileged": false,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0033",
+    "source": "siem",
+    "timestamp": "2026-10-20T15:33:00Z",
+    "severity": "low",
+    "host": "WS-040",
+    "user": "jdoe",
+    "src_ip": "10.0.0.137",
+    "dst_ip": null,
+    "rule": "Port scan from internal scanner",
+    "details": {
+      "scenario": "noise"
+    },
+    "enrichment": {
+      "asset_criticality": 3,
+      "asset_owner": "mpatel",
+      "asset_type": "workstation",
+      "user_role": "analyst",
+      "user_department": "finance",
+      "user_privileged": false,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0034",
+    "source": "edr",
+    "timestamp": "2026-10-20T15:53:00Z",
+    "severity": "low",
+    "host": "WS-014",
+    "user": "mpatel",
+    "src_ip": "10.0.0.158",
+    "dst_ip": null,
+    "rule": "USB device connected",
+    "details": {
+      "scenario": "noise"
+    },
+    "enrichment": {
+      "asset_criticality": 2,
+      "asset_owner": "jdoe",
+      "asset_type": "workstation",
+      "user_role": "sales_manager",
+      "user_department": "sales",
+      "user_privileged": false,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0035",
+    "source": "cloud",
+    "timestamp": "2026-10-20T15:54:00Z",
+    "severity": "low",
+    "host": "WS-014",
+    "user": "jdoe",
+    "src_ip": "10.0.0.189",
+    "dst_ip": null,
+    "rule": "Storage bucket listed",
+    "details": {
+      "scenario": "noise"
+    },
+    "enrichment": {
+      "asset_criticality": 2,
+      "asset_owner": "jdoe",
+      "asset_type": "workstation",
+      "user_role": "analyst",
+      "user_department": "finance",
+      "user_privileged": false,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  },
+  {
+    "alert_id": "A-0036",
+    "source": "edr",
+    "timestamp": "2026-10-20T16:53:00Z",
+    "severity": "low",
+    "host": "CLOUD-VM-02",
+    "user": "jdoe",
+    "src_ip": "10.0.0.187",
+    "dst_ip": null,
+    "rule": "Software update installed",
+    "details": {
+      "scenario": "noise"
+    },
+    "enrichment": {
+      "asset_criticality": 2,
+      "asset_owner": "devops",
+      "asset_type": "cloud_vm",
+      "user_role": "analyst",
+      "user_department": "finance",
+      "user_privileged": false,
+      "ti_match": false,
+      "ti_reason": null,
+      "notes": []
+    }
+  }
+]

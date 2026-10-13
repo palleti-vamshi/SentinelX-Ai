@@ -1,0 +1,9 @@
+user,role,department,privileged
+jdoe,analyst,finance,false
+asmith,hr_executive,hr,false
+rkumar,developer,engineering,false
+mpatel,sales_manager,sales,false
+sara.fin,finance_manager,finance,true
+ravi.admin,system_admin,it,true
+lee.devops,cloud_engineer,engineering,true
+svc-backup,service_account,it,true
