@@ -1,0 +1,62 @@
+[
+  {
+    "alert_id": "A-0001",
+    "source": "identity",
+    "timestamp": "2026-10-20T09:00:00Z",
+    "severity": "high",
+    "host": null,
+    "user": "sara.fin",
+    "src_ip": "203.0.113.9",
+    "dst_ip": null,
+    "rule": "Login from unusual country",
+    "details": {}
+  },
+  {
+    "alert_id": "A-0002",
+    "source": "identity",
+    "timestamp": "2026-10-20T09:06:00Z",
+    "severity": "medium",
+    "host": null,
+    "user": "sara.fin",
+    "src_ip": "203.0.113.9",
+    "dst_ip": null,
+    "rule": "Multiple failed MFA prompts",
+    "details": {}
+  },
+  {
+    "alert_id": "A-0003",
+    "source": "edr",
+    "timestamp": "2026-10-20T09:18:00Z",
+    "severity": "high",
+    "host": "SRV-FIN-01",
+    "user": "sara.fin",
+    "src_ip": null,
+    "dst_ip": null,
+    "rule": "Suspicious process accessed stored credentials",
+    "details": {}
+  },
+  {
+    "alert_id": "A-0004",
+    "source": "cloud",
+    "timestamp": "2026-10-20T09:31:00Z",
+    "severity": "high",
+    "host": "CLOUD-VM-01",
+    "user": "sara.fin",
+    "src_ip": "203.0.113.9",
+    "dst_ip": null,
+    "rule": "New access key created",
+    "details": {}
+  },
+  {
+    "alert_id": "A-0005",
+    "source": "cloud",
+    "timestamp": "2026-10-20T09:47:00Z",
+    "severity": "critical",
+    "host": "CLOUD-VM-01",
+    "user": "sara.fin",
+    "src_ip": "203.0.113.9",
+    "dst_ip": null,
+    "rule": "Unusual large data download",
+    "details": {}
+  }
+]
