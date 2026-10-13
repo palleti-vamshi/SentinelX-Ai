@@ -1,0 +1,156 @@
+{
+  "model_version": "rf-v1",
+  "sample_size": 100,
+  "global_top_features": [
+    {
+      "rank": 1,
+      "feature": "sttl",
+      "mean_abs_shap": 0.0609,
+      "description": "Source Time-to-Live (TTL)"
+    },
+    {
+      "rank": 2,
+      "feature": "ct_state_ttl",
+      "mean_abs_shap": 0.0489,
+      "description": "ct_state_ttl"
+    },
+    {
+      "rank": 3,
+      "feature": "dttl",
+      "mean_abs_shap": 0.0311,
+      "description": "Destination Time-to-Live (TTL)"
+    },
+    {
+      "rank": 4,
+      "feature": "state_INT",
+      "mean_abs_shap": 0.0209,
+      "description": "TCP/IP connection state flag"
+    },
+    {
+      "rank": 5,
+      "feature": "ct_srv_dst",
+      "mean_abs_shap": 0.0201,
+      "description": "ct_srv_dst"
+    },
+    {
+      "rank": 6,
+      "feature": "dload",
+      "mean_abs_shap": 0.0178,
+      "description": "Destination bits per second"
+    },
+    {
+      "rank": 7,
+      "feature": "proto_tcp",
+      "mean_abs_shap": 0.0174,
+      "description": "Transport layer protocol"
+    },
+    {
+      "rank": 8,
+      "feature": "sload",
+      "mean_abs_shap": 0.0161,
+      "description": "Source bits per second"
+    },
+    {
+      "rank": 9,
+      "feature": "ackdat",
+      "mean_abs_shap": 0.0149,
+      "description": "TCP ACK data latency"
+    },
+    {
+      "rank": 10,
+      "feature": "dinpkt",
+      "mean_abs_shap": 0.0148,
+      "description": "Destination inter-packet arrival time"
+    },
+    {
+      "rank": 11,
+      "feature": "rate",
+      "mean_abs_shap": 0.0141,
+      "description": "Flow packet transmission rate"
+    },
+    {
+      "rank": 12,
+      "feature": "dmean",
+      "mean_abs_shap": 0.0126,
+      "description": "Mean packet size (Destination -> Source)"
+    },
+    {
+      "rank": 13,
+      "feature": "ct_dst_src_ltm",
+      "mean_abs_shap": 0.0121,
+      "description": "ct_dst_src_ltm"
+    },
+    {
+      "rank": 14,
+      "feature": "swin",
+      "mean_abs_shap": 0.0118,
+      "description": "Source TCP window advertisement"
+    },
+    {
+      "rank": 15,
+      "feature": "service_-",
+      "mean_abs_shap": 0.0116,
+      "description": "Application layer service"
+    },
+    {
+      "rank": 16,
+      "feature": "dbytes",
+      "mean_abs_shap": 0.0113,
+      "description": "Bytes received (Destination -> Source)"
+    },
+    {
+      "rank": 17,
+      "feature": "sbytes",
+      "mean_abs_shap": 0.0109,
+      "description": "Bytes sent (Source -> Destination)"
+    },
+    {
+      "rank": 18,
+      "feature": "ct_dst_sport_ltm",
+      "mean_abs_shap": 0.0105,
+      "description": "ct_dst_sport_ltm"
+    },
+    {
+      "rank": 19,
+      "feature": "ct_srv_src",
+      "mean_abs_shap": 0.0103,
+      "description": "ct_srv_src"
+    },
+    {
+      "rank": 20,
+      "feature": "smean",
+      "mean_abs_shap": 0.0101,
+      "description": "Mean packet size (Source -> Destination)"
+    },
+    {
+      "rank": 21,
+      "feature": "tcprtt",
+      "mean_abs_shap": 0.0097,
+      "description": "TCP round-trip time"
+    },
+    {
+      "rank": 22,
+      "feature": "sinpkt",
+      "mean_abs_shap": 0.0093,
+      "description": "Source inter-packet arrival time"
+    },
+    {
+      "rank": 23,
+      "feature": "sjit",
+      "mean_abs_shap": 0.0086,
+      "description": "Source packet jitter"
+    },
+    {
+      "rank": 24,
+      "feature": "service_dns",
+      "mean_abs_shap": 0.0083,
+      "description": "Application layer service"
+    },
+    {
+      "rank": 25,
+      "feature": "synack",
+      "mean_abs_shap": 0.0072,
+      "description": "TCP SYN-ACK handshake latency"
+    }
+  ]
+}
