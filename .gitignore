@@ -218,3 +218,21 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# SentinelX AI project ignores
+# Datasets and raw data
+data/*.csv
+data/**/*.csv
+data/raw/
+
+# Model artifacts and binaries
+models/artifacts/*.joblib
+models/artifacts/*.pkl
+*.joblib
+*.pkl
+
+# Secrets and credentials
+*.key
+*.pem
+credentials.json
+
